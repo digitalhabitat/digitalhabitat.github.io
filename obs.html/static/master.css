@@ -22,7 +22,7 @@
     text-rendering: optimizeLegibility;
     --accent-color: 65, 76, 253;
     --loading-bg-color: 22, 22, 22;
-    --left-pane-active-width: 20rem;
+    --left-pane-active-width: max-content;
     --right-pane-active-width: 16rem;
     --normal-text-color: 51, 51, 51;
     --bg-color: #f2f3f5a6;
@@ -94,7 +94,7 @@ blockquote p {
     padding: 2rem;
     scrollbar-color: rgba(var(--code-hightlight-color), 0.4) #0000;
     scroll-margin-top: 2rem;
-    max-width: 120rem;
+    max-width: 70rem;
     flex: auto;
     font-size: 11pt;
 }
@@ -1801,7 +1801,7 @@ span.linenos.special {
     #search-results-box {
         height: 0rem;
         margin-top: 1rem;
-        max-width: 120rem;
+        max-width: 70rem;
         max-height: calc(100vh - 10rem);
     }
     #search-results {

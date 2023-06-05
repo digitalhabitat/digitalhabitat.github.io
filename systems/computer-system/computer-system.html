@@ -10,7 +10,7 @@
                 <link rel="shortcut icon" href="/favicon.ico" />
 
                 <!-- Set title -->
-                <title>Obsidian-Html/Notes</title>
+                <title>gardenbot/notes</title>
 
                 <!-- Includes -->
                 <script src="/obs.html/static/obsidian_core.js"></script>
@@ -117,12 +117,17 @@
         <div id="page_holder" class="flex_col">
                 <div id="header" class="header">
     <div id="header_flex" class="flex_row">
-            <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Obsidian-Html/Notes</a>
+            <a href="/index.html" id="homelink" title="Clear screen and go to homepage">gardenbot/notes</a>
             <div id="menu_toggle_button" class="navbar-button requires_js" onclick="toggle_menu()">
                     ≡
             </div>
             <div id="navbar" class="navbar requires_js">
-                    
+                    <a class="navbar-link" href="/index.html" title="Home">Home</a>
+<a class="navbar-link" href="/systems/wire-system/wire-system.html" title="Wiring">Wiring</a>
+<a class="navbar-link" href="/systems/localization-sysytem/gnss-rtk/usb-gnss-setup.html" title="GNSS RTK">GNSS RTK</a>
+<a class="navbar-link" href="/systems/drive-system/drive-roboclaw-setup.html" title="Drive Motors">Drive Motors</a>
+<a class="navbar-link" href="/systems/power-system/power-system.html" title="Power System">Power System</a>
+<a class="navbar-link" href="/systems/computer-system/computer-rpi.html" title="Computer System">Computer System</a>
                     <div class="icon-tray">
                             <div id="theme-button" class="theme-button requires_js" title="Change theme" onclick="toggle_theme_popup(this)">
     T
@@ -186,7 +191,7 @@
             </a>
         </div>
                                     <div >
-            <a id="dirtree_link" class="system-link" href="/obs.html/dir_index.html" title="View directory tree">
+            <a id="dirtree_link" class="system-link" href="/dirtree.html" title="View directory tree">
                     <img src = "/obs.html/static/dirtree.svg" style="width: 12px; padding: 4px;" alt="Directory tree link"/>
             </a>
         </div>
@@ -229,11 +234,11 @@
 		<button id="folder-4" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>drive-system-images</button>
 		<div id="folder-container-4" class="dir-container requires_js " path="/dimensions/chain_drive_system/drive-system-images">
 			<ul class="dir-list">
-				<li><div class="file-icon non-md-file"></div><a class="" href="/dimensions/chain_drive_system/drive-system-images/chain_drive_system_nobg.PNG"  class="external-link">chain_drive_system_nobg.PNG</a></li>
+				<li><div class="file-icon non-md-file"></div><a class="" href="/dimensions/chain_drive_system/drive-system-images/chain_drive_system_nobg.png"  class="external-link">chain_drive_system_nobg.png</a></li>
 				<li><div class="file-icon non-md-file"></div><a class="" href="/dimensions/chain_drive_system/drive-system-images/drive_motor_assembly_nobg.png"  class="external-link">drive_motor_assembly_nobg.png</a></li>
-				<li><div class="file-icon non-md-file"></div><a class="" href="/dimensions/chain_drive_system/drive-system-images/drive_motor_encoder.PNG"  class="external-link">drive_motor_encoder.PNG</a></li>
-				<li><div class="file-icon non-md-file"></div><a class="" href="/dimensions/chain_drive_system/drive-system-images/drive_sprocket_with_adapter_and_hardware.PNG"  class="external-link">drive_sprocket_with_adapter_and_hardware.PNG</a></li>
-				<li><div class="file-icon non-md-file"></div><a class="" href="/dimensions/chain_drive_system/drive-system-images/sprocket_adapter_and_hardware.PNG"  class="external-link">sprocket_adapter_and_hardware.PNG</a></li>
+				<li><div class="file-icon non-md-file"></div><a class="" href="/dimensions/chain_drive_system/drive-system-images/drive_motor_encoder.png"  class="external-link">drive_motor_encoder.png</a></li>
+				<li><div class="file-icon non-md-file"></div><a class="" href="/dimensions/chain_drive_system/drive-system-images/drive_sprocket_with_adapter_and_hardware.png"  class="external-link">drive_sprocket_with_adapter_and_hardware.png</a></li>
+				<li><div class="file-icon non-md-file"></div><a class="" href="/dimensions/chain_drive_system/drive-system-images/sprocket_adapter_and_hardware.png"  class="external-link">sprocket_adapter_and_hardware.png</a></li>
 			</ul>
 		</div>
 		<ul class="dir-list">
@@ -251,28 +256,27 @@
 </div>
 <button id="folder-6" class="dir-button active" onclick="toggle_dir(this.id)"><div class="file-icon"></div>systems</button>
 <div id="folder-container-6" class="dir-container requires_js active" path="/systems">
-	<button id="folder-7" class="dir-button active" onclick="toggle_dir(this.id)"><div class="file-icon"></div>computer-system</button>
+	<button id="folder-7" class="dir-button folder_note active active current_page_dirtree" href="/systems/computer-system/computer-system.html" onclick="toggle_dir(this.id)"><div class="file-icon"></div><div class="fn_pf">*</div>computer-system</button>
 	<div id="folder-container-7" class="dir-container requires_js active" path="/systems/computer-system">
 		<ul class="dir-list">
 			<li><div class="file-icon"></div><a class="" href="/systems/computer-system/computer-nano.html"  >computer-nano</a></li>
 			<li><div class="file-icon"></div><a class="" href="/systems/computer-system/computer-rpi.html"  >computer-rpi</a></li>
 			<li><div class="file-icon"></div><a class="" href="/systems/computer-system/computer-rpi-camera.html"  >computer-rpi-camera</a></li>
 			<li><div class="file-icon"></div><a class="" href="/systems/computer-system/computer-rpi-setup.html"  >computer-rpi-setup</a></li>
-			<li><div class="file-icon"></div><a class="active current_page_dirtree" href="/systems/computer-system/computer-system.html"  >computer-system</a></li>
 		</ul>
 	</div>
-	<button id="folder-8" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>drive-system</button>
+	<button id="folder-8" class="dir-button folder_note  " href="/systems/drive-system/drive-system.html" onclick="open_folder_note(this)"><div class="file-icon"></div><div class="fn_pf">*</div>drive-system</button>
 	<div id="folder-container-8" class="dir-container requires_js " path="/systems/drive-system">
 		<button id="folder-9" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>drive-system-details</button>
 		<div id="folder-container-9" class="dir-container requires_js " path="/systems/drive-system/drive-system-details">
 			<button id="folder-10" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>drive-system-drawings</button>
 			<div id="folder-container-10" class="dir-container requires_js " path="/systems/drive-system/drive-system-details/drive-system-drawings">
 				<ul class="dir-list">
-					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/2313n26_corner machine bracketl.gif"  class="external-link">2313n26_corner machine bracketl.gif</a></li>
-					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/AMT10 Encoder Mount Rev-.pdf"  class="external-link">AMT10 Encoder Mount Rev-.pdf</a></li>
-					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/Hex Nut Encoder Adapter Rev-.pdf"  class="external-link">Hex Nut Encoder Adapter Rev-.pdf</a></li>
-					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/MY1060_dimension.webp"  class="external-link">MY1060_dimension.webp</a></li>
-					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/vclamp-wiring.PNG"  class="external-link">vclamp-wiring.PNG</a></li>
+					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/2313n26_corner-machine-bracketl.gif"  class="external-link">2313n26_corner-machine-bracketl.gif</a></li>
+					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/amt10-encoder-mount-rev-.pdf"  class="external-link">amt10-encoder-mount-rev-.pdf</a></li>
+					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/hex-nut-encoder-adapter-rev-.pdf"  class="external-link">hex-nut-encoder-adapter-rev-.pdf</a></li>
+					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/my1060_dimension.webp"  class="external-link">my1060_dimension.webp</a></li>
+					<li><div class="file-icon non-md-file"></div><a class="" href="/systems/drive-system/drive-system-details/drive-system-drawings/vclamp-wiring.png"  class="external-link">vclamp-wiring.png</a></li>
 				</ul>
 			</div>
 			<ul class="dir-list">
@@ -284,7 +288,6 @@
 			<li><div class="file-icon"></div><a class="" href="/systems/drive-system/drive-motor-controller.html"  >drive-motor-controller</a></li>
 			<li><div class="file-icon"></div><a class="" href="/systems/drive-system/drive-motor-encoder-assembly.html"  >drive-motor-encoder-assembly</a></li>
 			<li><div class="file-icon"></div><a class="" href="/systems/drive-system/drive-roboclaw-setup.html"  >drive-roboclaw-setup</a></li>
-			<li><div class="file-icon"></div><a class="" href="/systems/drive-system/drive-system.html"  >drive-system</a></li>
 			<li><div class="file-icon"></div><a class="" href="/systems/drive-system/drive-system-safety.html"  >drive-system-safety</a></li>
 			<li><div class="file-icon"></div><a class="" href="/systems/drive-system/drive-system-wheel-assembly.html"  >drive-system-wheel-assembly</a></li>
 		</ul>
@@ -302,19 +305,17 @@
 			<li><div class="file-icon"></div><a class="" href="/systems/localization-sysytem/localization-system.html"  >localization-system</a></li>
 		</ul>
 	</div>
-	<button id="folder-13" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>power-system</button>
+	<button id="folder-13" class="dir-button folder_note  " href="/systems/power-system/power-system.html" onclick="open_folder_note(this)"><div class="file-icon"></div><div class="fn_pf">*</div>power-system</button>
 	<div id="folder-container-13" class="dir-container requires_js " path="/systems/power-system">
 		<ul class="dir-list">
-			<li><div class="file-icon"></div><a class="" href="/systems/power-system/power-system.html"  >power-system</a></li>
 		</ul>
 	</div>
-	<button id="folder-14" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>steering-system</button>
+	<button id="folder-14" class="dir-button folder_note  " href="/systems/steering-system/steering-system.html" onclick="open_folder_note(this)"><div class="file-icon"></div><div class="fn_pf">*</div>steering-system</button>
 	<div id="folder-container-14" class="dir-container requires_js " path="/systems/steering-system">
 		<ul class="dir-list">
-			<li><div class="file-icon"></div><a class="" href="/systems/steering-system/steering-system.html"  >steering-system</a></li>
 		</ul>
 	</div>
-	<button id="folder-15" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>wire-system</button>
+	<button id="folder-15" class="dir-button folder_note  " href="/systems/wire-system/wire-system.html" onclick="open_folder_note(this)"><div class="file-icon"></div><div class="fn_pf">*</div>wire-system</button>
 	<div id="folder-container-15" class="dir-container requires_js " path="/systems/wire-system">
 		<button id="folder-16" class="dir-button " onclick="toggle_dir(this.id)"><div class="file-icon"></div>wire-diagrams</button>
 		<div id="folder-container-16" class="dir-container requires_js " path="/systems/wire-system/wire-diagrams">
@@ -327,20 +328,31 @@
 			</ul>
 		</div>
 		<ul class="dir-list">
-			<li><div class="file-icon"></div><a class="" href="/systems/wire-system/wire-system.html"  >wire-system</a></li>
 		</ul>
 	</div>
 	<ul class="dir-list">
 	</ul>
 </div>
 <ul class="dir-list">
-	<li><div class="file-icon"></div><a class="" href="/index.html"  >index</a></li>
+	<li><div class="file-icon"></div><a class="" href="/index.html"  >Home</a></li>
 </ul>
 </div>
     </div>
 </div>
                         <div class="container">
-                                <div class="content"><h1 id="computer-system">Computer System</h1>
+                                
+                <div style="width:100%; text-align: right;display: block;margin: 0.5rem;">
+                    <div style="flex:1;display: none;"></div>
+                    <div class="breadcrumbs" style="flex:1 ;padding: 0.5rem; width: fit-content;display: inline;border-radius: 0.2rem;">
+                        <a href="/" style="color: rgb(var(--normal-text-color));">Home</a> / <span style="color: #666;">systems</span> / <a href="/systems/computer-system/computer-system.html" >computer-system</a>
+                    </div>
+                </div>
+<div class="content"><h1 id="computer-system">Computer System</h1>
+<div class="toc">
+<ul>
+<li><a href="#computer-system" class="anchor-link">Computer System</a></li>
+</ul>
+</div>
 <ul>
 <li>Raspberry PI 4 (2GB)   </li>
 <li>Nvidia Jetson Nano (B01)</li>
@@ -359,17 +371,17 @@
 
 </div>
 <div class="graph requires_js ">
-    <div id="A186850608021460671611155859401616518481{level}" class="graph_div"></div>
+    <div id="A299308199005944120353942893962723932098{level}" class="graph_div"></div>
 
-    <div class="graph-instructions" id="D186850608021460671611155859401616518481{level}">
+    <div class="graph-instructions" id="D299308199005944120353942893962723932098{level}">
         Left-click: follow link, Right-click: select node, Scroll: zoom
     </div>
     
     <div class="graph-button-row" style="display:flex;">
-        <button class="graph_button graph_show_button" id="B186850608021460671611155859401616518481{level}" level="{level}" note_temp_id="186850608021460671611155859401616518481" onclick="window.ObsHtmlGraph.run(this, '186850608021460671611155859401616518481', 'computer-system');">
+        <button class="graph_button graph_show_button" id="B299308199005944120353942893962723932098{level}" level="{level}" note_temp_id="299308199005944120353942893962723932098" onclick="window.ObsHtmlGraph.run(this, '299308199005944120353942893962723932098', 'computer-system');">
             Show Graph
         </button>
-        <button class="graph_button graph_type_button" id="C186850608021460671611155859401616518481{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
+        <button class="graph_button graph_type_button" id="C299308199005944120353942893962723932098{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
             2D
         </button>
     </div>

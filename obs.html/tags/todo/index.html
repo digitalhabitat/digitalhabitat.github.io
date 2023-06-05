@@ -10,7 +10,7 @@
                 <link rel="shortcut icon" href="/favicon.ico" />
 
                 <!-- Set title -->
-                <title>Obsidian-Html/Notes</title>
+                <title>gardenbot/notes</title>
 
                 <!-- Includes -->
                 <script src="/obs.html/static/obsidian_core.js"></script>
@@ -117,12 +117,17 @@
         <div id="page_holder" class="flex_col">
                 <div id="header" class="header">
     <div id="header_flex" class="flex_row">
-            <a href="/index.html" id="homelink" title="Clear screen and go to homepage">Obsidian-Html/Notes</a>
+            <a href="/index.html" id="homelink" title="Clear screen and go to homepage">gardenbot/notes</a>
             <div id="menu_toggle_button" class="navbar-button requires_js" onclick="toggle_menu()">
                     ≡
             </div>
             <div id="navbar" class="navbar requires_js">
-                    
+                    <a class="navbar-link" href="/index.html" title="Home">Home</a>
+<a class="navbar-link" href="/systems/wire-system/wire-system.html" title="Wiring">Wiring</a>
+<a class="navbar-link" href="/systems/localization-sysytem/gnss-rtk/usb-gnss-setup.html" title="GNSS RTK">GNSS RTK</a>
+<a class="navbar-link" href="/systems/drive-system/drive-roboclaw-setup.html" title="Drive Motors">Drive Motors</a>
+<a class="navbar-link" href="/systems/power-system/power-system.html" title="Power System">Power System</a>
+<a class="navbar-link" href="/systems/computer-system/computer-rpi.html" title="Computer System">Computer System</a>
                     <div class="icon-tray">
                             <div id="theme-button" class="theme-button requires_js" title="Change theme" onclick="toggle_theme_popup(this)">
     T
@@ -186,7 +191,7 @@
             </a>
         </div>
                                     <div >
-            <a id="dirtree_link" class="system-link" href="/obs.html/dir_index.html" title="View directory tree">
+            <a id="dirtree_link" class="system-link" href="/dirtree.html" title="View directory tree">
                     <img src = "/obs.html/static/dirtree.svg" style="width: 12px; padding: 4px;" alt="Directory tree link"/>
             </a>
         </div>
